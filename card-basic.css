@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color: green;
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+.container .header {
+    color: red;
+    width: 100%;
+
+}
+.container .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .nav ul{
+    padding: 0;
+}
+.container .nav ul > li{
+    background: brown;
+    display: inline-table;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.container .nav ul > li  .sub-1{
+    display: none;
+    position: absolute;
+}
+.container .nav ul > li  .sub-2{
+    display: none;
+    position: absolute;
+}
+.container .nav ul > li  .sub-3{
+    display: none;
+    position: absolute;
+}
+.container .nav ul > li  .sub-4{
+    display: none;
+    position: absolute;
+}
+.container .nav ul > li:hover .sub-1{
+    display: block;
+    position: absolute;
+}
+.container .nav ul > li:hover .sub-2{
+    display: block;
+}
+.container .nav ul > li:hover .sub-3{
+    display: block;
+}
+.container .nav ul > li:hover .sub-4{
+    display: block;
+}
+.container .nav ul > li > a{
+    color: white;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;    
+    white-space: nowrap;
+}
+.container .nav ul > li > a:hover{
+    background-color:white;
+    color: black;
+}
+.container .nav .search .search-tab{
+    float: left;
+}
+.container .nav .search .search-icon{
+    cursor: pointer;
+    float: right;
+}
