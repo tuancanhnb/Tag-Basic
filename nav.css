@@ -1,31 +1,37 @@
-.nav > ul{
+.nav>ul {
     list-style-type: none;
     background: rgb(110, 192, 110);
     text-align: center;
 }
-.nav > ul > li{
+
+.nav>ul>li {
     display: inline-table;
     width: 150px;
     height: 50px;
     line-height: 50px;
+    position: relative;
 }
-.nav > ul > li > a:hover{
-    background: white;
+
+.nav>ul>li:hover {
+    background-color: white;
 }
-.nav > ul > li > a{
-    text-decoration: none;
-    color: black;
+
+.nav>ul>li:hover .sub-menu {
+    background: rgb(110, 192, 110);
     display: block;
+    width: 100%;
+    transition: all 0.5s ease-in;
 }
-.nav > ul > li > .sub-menu-1{
-    display: none;
+
+.nav>ul>li>.sub-menu {
     position: absolute;
+    list-style: none;
+    display: none;
+    padding-left: 0px;
 }
-.nav > ul > li > .sub-menu-2{
-    display: none;
-    position: absolute;
+.nav>ul>li>.sub-menu li:hover {
+    background-color: turquoise;
 }
-.nav > ul > li > .sub-menu-3{
-    display: none;
-    position: absolute;
+a {
+    text-decoration: none;
 }
